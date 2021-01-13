@@ -1,0 +1,57 @@
+.interviews {
+  margin-top: 110px;
+  h2 {
+    padding: 20px;
+    font-family: "IBM Plex Sans", sans-serif;
+    font-size: 36px;
+    color: $primary-text;
+    letter-spacing: 0;
+    line-height: 42px;
+    span {
+      display: block;
+    }
+  }
+  .flex {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+    .img_container {
+      width: 100%;
+    }
+  }
+}
+
+@media (min-width: 768px) {
+  .interviews {
+    margin-top: 25%;
+    h2 {
+      padding: 4% 15%;
+      width: auto;
+      font-size: 48px;
+      span {
+        display: none;
+      }
+    }
+    .flex {
+      flex-flow: row wrap;
+
+      .img_container {
+        width: 50%;
+        max-height: 22.75rem;
+      }
+    }
+  }
+}
+
+@media (min-width: 1024px) {
+  .interviews {
+    margin-top: 20%;
+    .flex {
+      .img_container {
+        width: 33.3%;
+        max-height: none;
+      }
+    }
+  }
+}

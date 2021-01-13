@@ -1,0 +1,72 @@
+.topics {
+  padding: 40px 0px;
+  h2 {
+    font-family: "IBM Plex Sans", sans-serif;
+    font-size: 36px;
+    color: $primary-text;
+    letter-spacing: 0;
+    line-height: 42px;
+    padding: 0px 25px;
+    span {
+      display: block;
+    }
+  }
+  figcaption {
+    padding-top: 15px;
+    font-family: "IBM Plex Sans", sans-serif;
+    font-weight: 600;
+    font-size: 24px;
+    color: $primary-text;
+    letter-spacing: 0;
+    text-align: center;
+  }
+  .grid {
+    grid-template-rows: auto;
+    padding-top: 25px;
+    display: grid;
+    justify-items: center;
+    row-gap: 40px;
+    .topics_icon {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+  }
+}
+
+@media (min-width: 768px) {
+  .topics {
+    display: flex;
+    flex-direction: column;
+    padding: 60px 40px;
+    align-items: center;
+    h2 {
+      align-self: flex-start;
+      margin-left: 12%;
+      font-size: 48px;
+      span {
+        display: none;
+      }
+    }
+    img {
+      max-width: 104px;
+      max-height: 104px;
+    }
+    figcaption {
+      padding-top: 25px;
+    }
+    .grid {
+      grid-template-columns: repeat(4, 1fr);
+      padding-top: 55px;
+
+      .topics_icon {
+        align-items: center;
+        span {
+          &:first-child {
+            display: block;
+          }
+        }
+      }
+    }
+  }
+}
